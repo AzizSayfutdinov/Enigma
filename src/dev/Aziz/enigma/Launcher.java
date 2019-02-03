@@ -7,6 +7,12 @@ public class Launcher {
 
         Plugboard p = new Plugboard();
         p.printConfiguration();
+        p.addPlug('a', 'b');
+        p.printConfiguration();
+        p.addPlug('Z', 'C');
+        p.printConfiguration();
+        Wheel w1 = new Wheel('c', Type.Type1);
+        w1.printConfiguration();
 
     }
 
