@@ -11,8 +11,13 @@ public class Launcher {
         p.printConfiguration();
         p.addPlug('Z', 'C');
         p.printConfiguration();
-        Wheel w1 = new Wheel('c', Type.Type1);
-        w1.printConfiguration();
+        WheelType wt = new WheelType(Type.Type1);
+        wt.printConfiguration();
+        Wheel w = new Wheel(new WheelType(Type.Type1));
+        w.setInput('S');
+        System.out.println("Input: " + 'S' + " -> " + w.getOutput(w.getCurrentInput()));
+
+
 
     }
 
