@@ -15,10 +15,11 @@ public class Launcher {
         wt.printConfiguration();
         Wheel w = new Wheel(new WheelType(Type.Type1));
         w.setInput('S');
-        System.out.println("Input: " + 'S' + " -> " + w.getOutput(w.getCurrentInput()));
-
-
-
+        System.out.println("\nWheel 1: \tInput: " + 'S' + " -> " + w.getOutput(w.getCurrentInput()));
+        Reflector r = new Reflector(w);
+        r.setInput('F');
+        System.out.println("Reflector: \tInput: " + 'F' + " -> " + r.getOutput(r.getCurrentInput()));
+        
     }
 
     // TODO: Let all the classes have observers, which will notify the next step about the change
