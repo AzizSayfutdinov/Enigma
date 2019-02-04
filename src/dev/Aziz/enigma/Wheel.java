@@ -73,7 +73,12 @@ public class Wheel {
 
     }
 
-    public char getOutput
+    public char getOutput(char input){
+        this.currentInput = input;
+
+
+        
+    }
 
 
     public void printConfiguration(){
