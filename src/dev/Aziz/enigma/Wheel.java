@@ -2,6 +2,8 @@ package dev.Aziz.enigma;
 
 public class Wheel {
 
+    //TODO: make Wheel abstract and create different types of wheels
+
     private char currentInput;
     private WheelType wheelType;
 

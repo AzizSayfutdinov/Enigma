@@ -19,7 +19,7 @@ public class Launcher {
         Reflector r = new Reflector(w);
         r.setInput('F');
         System.out.println("Reflector: \tInput: " + 'F' + " -> " + r.getOutput(r.getCurrentInput()));
-        
+
     }
 
     // TODO: Let all the classes have observers, which will notify the next step about the change
