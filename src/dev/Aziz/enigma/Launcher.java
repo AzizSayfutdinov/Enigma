@@ -20,6 +20,16 @@ public class Launcher {
         r.setInput('F');
         System.out.println("Reflector: \tInput: " + 'F' + " -> " + r.getOutput(r.getCurrentInput()));
 
+
+        //Test for observer pattern implementation
+        TestObject testObject = new TestObject();
+        KeyManager keyManager = new KeyManager();
+
+
+        keyManager.addPropertyChangeListener(testObject);
+
+
+
     }
 
     // TODO: Let all the classes have observers, which will notify the next step about the change
